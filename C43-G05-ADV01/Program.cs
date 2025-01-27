@@ -6,7 +6,7 @@ namespace C43_G05_ADV01
     {
         //public static  void  ReverseArrayList(ArrayList arrayList)
         //{
-        //    int i = 0;
+        //    int i = 0; k
         //    int j = arrayList.Count - 1;
         //    while (i < j)
         //    {
