@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C43-G05-ADV01", "C43-G05-AD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C43-G05-ADV02", "C43-G05-ADV02\C43-G05-ADV02.csproj", "{D7FD4A8B-9B32-40D5-BBB1-764F49EE22A3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C#_Exam", "C#_Exam\C#_Exam.csproj", "{54277D22-F1A3-440C-B950-9B9039AC234B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C#Advanced03", "C#Advanced03\C#Advanced03.csproj", "{FE2FD19B-85BA-4539-9F07-5C037D281196}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,14 @@ Global
 		{D7FD4A8B-9B32-40D5-BBB1-764F49EE22A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7FD4A8B-9B32-40D5-BBB1-764F49EE22A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7FD4A8B-9B32-40D5-BBB1-764F49EE22A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54277D22-F1A3-440C-B950-9B9039AC234B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54277D22-F1A3-440C-B950-9B9039AC234B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54277D22-F1A3-440C-B950-9B9039AC234B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54277D22-F1A3-440C-B950-9B9039AC234B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE2FD19B-85BA-4539-9F07-5C037D281196}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE2FD19B-85BA-4539-9F07-5C037D281196}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE2FD19B-85BA-4539-9F07-5C037D281196}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE2FD19B-85BA-4539-9F07-5C037D281196}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

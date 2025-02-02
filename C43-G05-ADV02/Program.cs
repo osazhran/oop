@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Runtime.Intrinsics.X86;
 using static System.Runtime.InteropServices.JavaScript.JSType;
@@ -200,7 +201,12 @@ namespace C43_G05_ADV02
 
             #endregion
             #region Q8 Without Chat GPT
-
+            ArrayList arrayList = new ArrayList() { 1, 2, 3, 4, 5, 7, 10 };
+            RemoveOddNumberFromArray(arrayList);
+            for (int i = 0; i < arrayList.Count; i++)
+            {
+                Console.WriteLine(arrayList[i]);
+            }
             #endregion
 
         }
@@ -271,16 +277,39 @@ namespace C43_G05_ADV02
             for (int i = 0; i < list.Count; i++)
                 stack.Push(list[i]);
         }
-        //static void ReversFirstEleInQueue(Queue<int> queue, int K)
+
+        //static void RemoveOddNumberFromArray(ArrayList array)
         //{
-        //    if (queue.Count<1) return ;
-        //    for(int i = 0; i<queue.Count;i++);
-        //    {
-        //        if (queue.Dequeue() == K) ;
-                    
-        //    }
-             
+        // System.InvalidOperationException: 'Collection was modified; enumeration operation may not execute.'
+        //    foreach (int i in array)
+        //        if (i %2==1)
+        //        array.Remove(i);
         //}
+        static ArrayList RemoveOddNumberFromArray(ArrayList array)
+        {
+            for (int i = array.Count - 1; i >= 0; i--)
+            {
+
+                if (array[i] is int num && num % 2!=0)
+                array.RemoveAt(i);
+
+            }
+            return array;
+
+        }
+
+
+
+
+
+        ///static void ReversFirstEleInQueue(Queue<int> queue, int K)
+        ///{
+        ///    if (queue.Count<1) return ;
+        ///    for(int i = 0; i<queue.Count;i++);
+        ///    {
+        ///        if (queue.Dequeue() == K) ;
+        ///    }
+        ///}
 
     }
 }
