@@ -7,29 +7,31 @@ using System.Threading.Tasks;
 
 namespace C__Exam
 {
-    internal class BaseQuestion
+  public  abstract class BaseQuestion  /*ICloneable, IComparable<BaseQuestion>*/
     {
+
         public string Header { get; set; }
         public string Body { get; set; }
         public int Mark { get; set; }
-        public MCQ mCQ { get; set; }
-        public Answers[] AnswerList {  get; set; }
+        public Answers[] answers { get; set; }
+        public int CorrectAnswer { get; set; }
 
-        public BaseQuestion(string header, string body, int mark)
+        protected BaseQuestion(string header, string body, int mark, Answers[] _answers, int correctAnswer)
         {
             Header = header;
             Body = body;
             Mark = mark;
+            answers = _answers;
+            CorrectAnswer = correctAnswer;
         }
 
-
-        public enum MCQ
+        public override string ToString()
         {
-            A,
-            B,
-            C,
-            d
-        }   
+            return $"Q.{Body} {string.Join(" , ", answers.Select(a => a.ToString()))}\n";
+        }
+
+        public abstract void ShowQuestion();
+
 
     }
 }
